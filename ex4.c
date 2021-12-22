@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-void squeez(char * str1, char *str2);
+void squeez(char str1, char  str2);
 int main()
 {
 	char str1[100]="priya";
@@ -9,7 +9,7 @@ int main()
 	squeez(str1,str2);
 	printf("after squeezing %s\n",str1);
 }
-void squeez(char * str1, char *str2)
+void squeez(char  str1, char  str2)
 {
 	int i,j,l=0;
 	int len1=strlen(str1);

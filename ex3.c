@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <ctype.h>
-unsigned long htoi(const char s[]);
+unsigned long htoi(char s[]);
 int main()
 {
 	printf("%ld\n",htoi("0xFA9C"));
 	return 0;
 }
-unsigned long htoi(const char s[])
+unsigned long htoi(char s[])
 {
 	unsigned long n = 0;
 	for(int i=0; s[i] != '\0'; i++)
